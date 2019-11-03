@@ -8,8 +8,6 @@ O objetivo desta tarefa é consumir uma API usando React Hooks, exibir um loadin
 
 - Escolha um API pública de sua preferência. Sugestão: https://developer.marvel.com
 
-[Detalhe do produto](./modal.png)
-
 ### O que será aprendido?
 
 - Como usar os hooks básicos do React
