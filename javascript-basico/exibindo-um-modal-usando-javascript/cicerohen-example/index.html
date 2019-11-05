@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <script type="text/javascript" src="./scripts.js"></script>
+    <title>Minha loja</title>
+</head>
+<body>
+    <header class="header">
+      <h3 class="header__title">Minha Loja</h3>
+    </header>
+    <main class="main">
+      <article class="article">
+        <h3 class="article__title">LISTA DE PRODUTOS</h3>
+        <ul class="list products-list">
+          <li class="list__item products-list__item">
+            <div class="product__thumbnail"><img src="https://i.ibb.co/yfMNyhd/icon-prod.png" alt="Imagem do Produto" /></div>
+            <div class="products-list__item-details">
+              <h4 class="product__name">MotoG 7 Play<h4>
+              <p class="product__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<p>
+              <strong class="product__price">R$ 500,000</strong>
+            </div>
+            <a href="#" data-toggle-modal="1" class="button button--primary">Ver detalhes</a>
+          </li>
+          <li class="list__item products-list__item">
+            <div class="product__thumbnail">
+              <img src="https://i.ibb.co/yfMNyhd/icon-prod.png" alt="Imagem do Produto" /></div>
+            <div class="products-list__item-details">
+              <h4 class="product__name">Xiaomi Redmi<h4>
+              <p class="product__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<p>
+              <strong class="product__price">R$ 500,000</strong>
+            </div>
+            <a href="#" data-toggle-modal="2" class="button button--primary">Ver detalhes</a>
+          </li>
+        </ul>
+      </article>
+    </main>
+        <section data-modal="1" class="modal product-details-modal">
+          <div class="modal__container">
+            <header class="modal__header">
+              <h4 class="modal__title">Detalhes do MotoG 7 Play</h4>
+              <a href="#" class="button modal__close-btn">Fechar</a>
+            </header>
+            <main class="modal__body">
+              <div class="product__thumbnail"><img src="https://i.ibb.co/k2Ffyb4/picture-prod.png"/></div>
+              <div>
+                <h4 class="product__name">MotoG 7 Play<h4>
+              <p class="product__description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              <p>
+              <strong class="product__price">R$ 500,000</strong>
+              </div>
+            </main>
+          </div>
+        </section>
+        <section data-modal="2" class="modal product-details-modal">
+          <div class="modal__container">
+            <header class="modal__header">
+              <h4 class="modal__title">Detalhes do Xiaomi Redmi 7</h4>
+              <a href="#" class="button modal__close-btn">Fechar</a>
+            </header>
+            <main class="modal__body">
+              <div class="product__thumbnail"><img src="https://i.ibb.co/k2Ffyb4/picture-prod.png" /></div>
+              <div>
+                <h4 class="product__name">Xiaomi Redmi 7<h4>
+              <p class="product__description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.    
+              <p>
+              <strong class="product__price">R$ 500,000</strong>
+              </div>
+            </main>
+          </div>
+        </section>
+</body>
+</html>
