@@ -72,15 +72,15 @@ describe("<Header/>", () => {
     fireEvent.click(button);
     jest.advanceTimersByTime(200);
 
-    jest.useRealTimers();
-
     expect(queryByTestId(component.container, "loading")).toBeDefined();
     expect(fetch).toHaveBeenNthCalledWith(1, api.RANDOM_TEXT_URL);
+
+    jest.useRealTimers();
 
     await act(async () => {
       await wait();
     });
 
-    expect(queryByTestId(component.container, "loading")).toBeDefined();
+    expect(queryByTestId(component.container, "loading")).not.toBeTruthy();
   });
 });
