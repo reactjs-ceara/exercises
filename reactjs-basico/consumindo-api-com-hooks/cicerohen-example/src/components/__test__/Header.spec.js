@@ -69,11 +69,13 @@ describe("<Header/>", () => {
         })
     );
 
+    expect(queryByTestId(component.container, "loading")).not.toBeTruthy();
+
     fireEvent.click(button);
-    jest.advanceTimersByTime(200);
 
     expect(queryByTestId(component.container, "loading")).toBeDefined();
-    expect(fetch).toHaveBeenNthCalledWith(1, api.RANDOM_TEXT_URL);
+
+    jest.advanceTimersByTime(200);
 
     jest.useRealTimers();
 
@@ -82,5 +84,7 @@ describe("<Header/>", () => {
     });
 
     expect(queryByTestId(component.container, "loading")).not.toBeTruthy();
+
+    expect(fetch).toHaveBeenNthCalledWith(1, api.RANDOM_TEXT_URL);
   });
 });
