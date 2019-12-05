@@ -19,7 +19,7 @@ const Wrapper = styled.button`
 `;
 
 const Button = React.memo(({ disabled, children, onClick }) => (
-  <Wrapper disabled={disabled} onClick={onClick}>
+  <Wrapper disabled={disabled} onClick={onClick} data-testid="button">
     {children}
   </Wrapper>
 ));

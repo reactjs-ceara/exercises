@@ -36,7 +36,7 @@ const Header = () => {
   }, [data, setRandomText]);
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="header">
       <Title>React Hooks</Title>
       {showLoading && <Loading />}
       <Button onClick={fetchData} disabled={showLoading}>

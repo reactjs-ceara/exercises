@@ -33,7 +33,7 @@ const LoadingContainer = styled.div`
 `;
 
 const ListItem = React.memo(({ children }) => (
-  <ItemWrapper>{children}</ItemWrapper>
+  <ItemWrapper data-testid="list-item">{children}</ItemWrapper>
 ));
 
 const List = React.memo(() => {
@@ -41,7 +41,7 @@ const List = React.memo(() => {
   const { showLoading } = useLoadingContext();
 
   return (
-    <Wrapper>
+    <Wrapper data-testid="list">
       {showLoading && (
         <LoadingContainer>
           <Loading />
