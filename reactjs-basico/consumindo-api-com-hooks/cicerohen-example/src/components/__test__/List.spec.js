@@ -31,7 +31,7 @@ describe("<List /> tests", () => {
     expect(getByTestId(component.container, "list")).toBeDefined();
   });
 
-  it("deve exibir um loading enquanto durante a requisição dos textos randômicos", async () => {
+  it("deve alternar a exibição do loading corretamente", async () => {
     let loadingContext = {};
 
     function HookWrapper() {

@@ -53,7 +53,7 @@ describe("<Header/>", () => {
     });
   });
 
-  it("deve exibir um loading ao durante a requisição dos textos randômicos", async () => {
+  it("deve exibir um loading durante a requisição dos textos randômicos", async () => {
     const button = getByTestId(component.container, "button");
 
     jest.useFakeTimers();
