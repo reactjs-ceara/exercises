@@ -39,13 +39,10 @@ A qualquer momento você pode criar uma [issue](https://github.com/cicerohen/rea
 
 A issue deverá ter a label **ajuda** e a label corresponde à trilha.
 
-Ex: https://github.com/cicerohen/react-redux-saga-training/issues/2
-
 ##### Issue para pedir revisão
 
 A issue deverá ter a label **revisao** e a label corresponde à trilha.
 
-Ex: https://github.com/cicerohen/react-redux-saga-training/issues/1
 
 **_Observação_**:
 
